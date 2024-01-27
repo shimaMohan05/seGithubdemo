@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-06T18:26:36 IST" name="Default suite" finished-at="2024-01-06T18:27:32 IST" duration-ms="55858">
+  <suite started-at="2024-01-07T23:18:08 IST" name="Default suite" finished-at="2024-01-07T23:19:13 IST" duration-ms="64815">
     <groups>
     </groups>
-    <test started-at="2024-01-06T18:26:36 IST" name="Default test" finished-at="2024-01-06T18:27:32 IST" duration-ms="55858">
+    <test started-at="2024-01-07T23:18:08 IST" name="Default test" finished-at="2024-01-07T23:19:13 IST" duration-ms="64815">
       <class name="scenario2Testcases.AdminTest">
-        <test-method is-config="true" signature="sessionStart()[pri:0, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:26:36 IST" name="sessionStart" finished-at="2024-01-06T18:27:06 IST" duration-ms="30187" status="PASS">
+        <test-method is-config="true" signature="sessionStart()[pri:0, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:18:08 IST" name="sessionStart" finished-at="2024-01-07T23:18:45 IST" duration-ms="36402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sessionStart -->
-        <test-method is-config="true" signature="basicSteps()[pri:0, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:06 IST" name="basicSteps" finished-at="2024-01-06T18:27:16 IST" duration-ms="9995" status="PASS">
+        <test-method is-config="true" signature="basicSteps()[pri:0, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:18:45 IST" name="basicSteps" finished-at="2024-01-07T23:18:53 IST" duration-ms="8191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicSteps -->
-        <test-method signature="getOptions()[pri:1, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:16 IST" name="getOptions" finished-at="2024-01-06T18:27:17 IST" duration-ms="653" status="PASS">
+        <test-method signature="getOptions()[pri:1, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:18:53 IST" name="getOptions" finished-at="2024-01-07T23:18:55 IST" duration-ms="1577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOptions -->
-        <test-method signature="adminClickTest()[pri:2, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:17 IST" name="adminClickTest" finished-at="2024-01-06T18:27:20 IST" duration-ms="3686" status="PASS">
+        <test-method signature="adminClickTest()[pri:2, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:18:55 IST" name="adminClickTest" finished-at="2024-01-07T23:18:59 IST" duration-ms="4635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminClickTest -->
-        <test-method signature="searchByUserName()[pri:3, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:20 IST" name="searchByUserName" finished-at="2024-01-06T18:27:24 IST" duration-ms="3902" status="PASS">
+        <test-method signature="searchByUserName()[pri:3, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:18:59 IST" name="searchByUserName" finished-at="2024-01-07T23:19:04 IST" duration-ms="4537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserName -->
-        <test-method signature="searchByUserRole()[pri:4, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:24 IST" name="searchByUserRole" finished-at="2024-01-06T18:27:28 IST" duration-ms="3870" status="PASS">
+        <test-method signature="searchByUserRole()[pri:4, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:19:04 IST" name="searchByUserRole" finished-at="2024-01-07T23:19:09 IST" duration-ms="4582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserRole -->
-        <test-method signature="searchByUserStatus()[pri:5, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-06T18:27:28 IST" name="searchByUserStatus" finished-at="2024-01-06T18:27:32 IST" duration-ms="3302" status="PASS">
+        <test-method signature="searchByUserStatus()[pri:5, instance:scenario2Testcases.AdminTest@72967906]" started-at="2024-01-07T23:19:09 IST" name="searchByUserStatus" finished-at="2024-01-07T23:19:13 IST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserStatus -->

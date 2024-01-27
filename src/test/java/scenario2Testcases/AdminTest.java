@@ -11,18 +11,21 @@ public class AdminTest extends BaseClass{
   public void getOptions()
   {
 	 List<WebElement> lists = ap.toGetlistOfOptions();
+	 System.out.println("number of options : "+lists.size() );
 	 for(WebElement i:lists)
 		{
-			System.out.println(i.getText());
+			System.out.print("  "+i.getText());
+			
+			
 		}
 	 
   }
 	 @Test(priority=2)
 	  public void adminClickTest() 
 	 {BaseClass.getWait();
-		 ap.toClickAdmin();
-		 Assert.assertTrue(driver.getCurrentUrl().contains("admin"),"Failed to perform admin selection");
-		 System.out.println(" select and click the Admin option successfully");
+	 ap.toClickAdmin();
+	Assert.assertTrue(driver.getCurrentUrl().contains("admin"),"Failed to perform admin selection");
+	System.out.println(" select and click the Admin option successfully");
 		 
 	 }
 	 @Test(priority=3)

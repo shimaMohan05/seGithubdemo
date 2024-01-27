@@ -10,9 +10,9 @@ public class Loginpage {
 	{
 		this.driver=driver;
 	}
-	By uname=By.name("username");
-	By pword=By.name("password");
-	By button=By.xpath("//button[@type='submit']");
+	private By uname=By.name("username");
+	private By pword=By.name("password");
+	private By button=By.xpath("//button[@type='submit']");
 	
 	public void toEnterCredentials(String username,String password)
 	{

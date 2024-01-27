@@ -5,9 +5,13 @@
     <classes>
       <class name="scenario2Testcases.AdminTest">
         <methods>
+          <include name="searchByUserRole"/>
+          <include name="searchByUserName"/>
+          <include name="searchByUserStatus"/>
           <include name="adminClickTest"/>
           <include name="sessionStart"/>
           <include name="basicSteps"/>
+          <include name="getOptions"/>
         </methods>
       </class> <!-- scenario2Testcases.AdminTest -->
     </classes>

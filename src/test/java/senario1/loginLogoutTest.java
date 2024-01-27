@@ -1,6 +1,9 @@
 package senario1;
 
 import org.testng.annotations.Test;
+
+import scenario2Testcases.BaseClass;
+
 import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +25,8 @@ public class loginLogoutTest {
 	
  @Test(dataProvider="credentials",dataProviderClass=Scenario1Utility.class)
   public void toLogin(String uname,String pword) {
-	  System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\eclipse-workspace-staragile\\SeStaragileProj\\Driver\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver",
+	"C:\\Users\\user\\eclipse-workspace-staragile\\SeStaragileProj\\Driver\\chromedriver.exe");
 	 driver=new ChromeDriver();
 	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -30,6 +34,7 @@ public class loginLogoutTest {
 	  driver.findElement(By.name("password")).sendKeys(pword);
 	  Scenario1Utility.getScreenShot(driver,"AfterGivingCredentials");
 	 driver.findElement(By.xpath("//button[@type='submit']")).click();
+	 BaseClass.getWait();
 	 Scenario1Utility.getScreenShot(driver,"After login");
 	  Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"), "Failed to login");
 	  System.out.println("Login Successfully");
@@ -43,7 +48,8 @@ public class loginLogoutTest {
 	  Scenario1Utility.getScreenShot(driver,"AfterClickingOptions");
 	  driver.findElement(By.xpath("(//a[@class='oxd-userdropdown-link'])[4]")).click();
 	  Scenario1Utility.getScreenShot(driver,"Afterlogout");
-	  Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Fail:  some issues are  in logout process");
+	  Assert.assertTrue(driver.getCurrentUrl().contains("login"), 
+			  "Fail:  some issues are  in logout process");
 	  System.out.println("Successfully logout from the OrangeHrm");
   }
 }

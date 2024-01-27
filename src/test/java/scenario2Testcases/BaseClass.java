@@ -23,7 +23,8 @@ public class BaseClass {
 	
 	@BeforeTest
 	public void sessionStart()
-	{System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\eclipse-workspace-staragile\\SeStaragileProj\\Driver\\chromedriver.exe");
+	{System.setProperty("webdriver.chrome.driver",
+	"C:\\Users\\user\\eclipse-workspace-staragile\\SeStaragileProj\\Driver\\chromedriver.exe");
 	 driver=new ChromeDriver();
 	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
